@@ -1,5 +1,5 @@
 # Source common code from file
-. $PSScriptRoot/../provision_common.ps1
+. $PSScriptRoot/../common.ps1
 
 # https://chocolatey.org/packages/sysinternals
 RunCommand -command choco -arguments @("install", "-y", "sysinternals")

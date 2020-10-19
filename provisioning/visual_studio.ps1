@@ -1,5 +1,5 @@
 # Source common code from file
-. $PSScriptRoot/provision_common.ps1
+. $PSScriptRoot/common.ps1
 
 $setupFilename = "vs_buildtools.exe"
 $downloadUrl = "https://aka.ms/vs/16/release/$setupFilename"
