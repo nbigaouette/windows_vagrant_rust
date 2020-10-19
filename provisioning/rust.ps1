@@ -3,7 +3,7 @@
 
 $setupFilename = "rustup-init.exe"
 # rustup version 1.22.1
-$sha256sum = "d17df34ba974b9b19cf5c75883a95475aa22ddc364591d75d174090d55711c72"
+$sha256sum = "dff949802997c005128f5e3c21a9e1eaf0b9958cf42d7414e361b5c24ff69332"
 
 # Gnu toolchain, x86_64 build
 $hostTriple = "x86_64-pc-windows-gnu"
