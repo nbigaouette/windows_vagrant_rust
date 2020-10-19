@@ -109,4 +109,4 @@ OpenSSH is installed in the VM. Simply connect to it:
 ssh IEUser@localhost -p 2222
 ```
 
-Password is `passw0rd!` as defined here: https://az792536.vo.msecnd.net/vms/release_notes_license_terms_8_1_15.pdf
+Password is `Passw0rd!` as defined here: https://az792536.vo.msecnd.net/vms/release_notes_license_terms_8_1_15.pdf
