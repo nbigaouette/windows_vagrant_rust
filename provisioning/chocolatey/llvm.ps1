@@ -9,4 +9,4 @@ RunCommand -command "choco" -arguments @("install", "-y", "llvm", "--version=$ve
 # Refresh envrionment variables, including PATH
 RefreshEnvironmentVariables
 
-RunCommand -command "clang" -arguments @("version")
+RunCommand -command "clang" -arguments @("-v")
