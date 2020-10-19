@@ -60,6 +60,10 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "provisioning/chocolatey/vscode.ps1", upload_path: "C:\\provisioning\\chocolatey\\vscode.ps1", privileged: true
 
   # ----------------------------------------------------------------------
+  # LLVM
+  config.vm.provision "shell", path: "provisioning/chocolatey/llvm.ps1", upload_path: "C:\\provisioning\\chocolatey\\llvm.ps1", privileged: true
+
+  # ----------------------------------------------------------------------
   # Visual C++ Build Tools
   # From https://github.com/rust-lang/rustup.rs/#other-installation-methods
   #     MSVC builds of rustup additionally require an installation
