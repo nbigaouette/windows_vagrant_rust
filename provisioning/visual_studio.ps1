@@ -29,7 +29,7 @@ Write-Host "Running $setupFullPath..."
 RunCommand -command "$setupFullPath" -arguments @(
     "--quiet",
     "--add", "Microsoft.VisualStudio.Workload.MSBuildTools",
-    "--add", "Microsoft.VisualStudio.Component.Windows10SDK",
+    "--add", "Microsoft.VisualStudio.Component.Windows10SDK"
 )
 
 RefreshEnvironmentVariables
