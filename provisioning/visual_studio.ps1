@@ -28,8 +28,15 @@ DownloadFile -name "Visual C++ Build Tools" -url $downloadUrl -downloadTo $setup
 Write-Host "Running $setupFullPath..."
 RunCommand -command "$setupFullPath" -arguments @(
     "--quiet",
-    "--add", "Microsoft.VisualStudio.Workload.MSBuildTools",
-    "--add", "Microsoft.VisualStudio.Component.Windows10SDK"
+    "--includeRecommended",
+    "--add", "Microsoft.Component.MSBuild",
+    "--add", "Microsoft.Component.VC.Runtime.UCRTSDK",
+    "--add", "Microsoft.VisualStudio.Component.CoreBuildTools",
+    "--add", "Microsoft.VisualStudio.Component.VC.ASAN",
+    "--add", "Microsoft.VisualStudio.Component.VC.Tools.x86.x64",
+    "--add", "Microsoft.VisualStudio.Component.Windows10SDK",
+    # advapi32.lib
+    "--add", "Microsoft.VisualStudio.Workload.VCTools"
 )
 
 RefreshEnvironmentVariables
