@@ -1,7 +1,7 @@
 # Source common code from file
 . $PSScriptRoot/../common.ps1
 
-$version = "2.28.0"
+$version = "2.29.2"
 
 # https://chocolatey.org/packages/git
 RunCommand -command "choco" -arguments @("install", "-y", "git", "--version=$version")
