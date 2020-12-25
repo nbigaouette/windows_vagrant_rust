@@ -2,8 +2,8 @@
 . $PSScriptRoot/common.ps1
 
 $setupFilename = "rustup-init.exe"
-# rustup version 1.22.1
-$sha256sum = "dff949802997c005128f5e3c21a9e1eaf0b9958cf42d7414e361b5c24ff69332"
+# rustup version 1.23.1
+$sha256sum = "beddae8ff6830419b5d24d719a6ef1dd67a280fe8e799963b257467ffc205560"
 
 # Gnu toolchain, x86_64 build
 $hostTriple = "x86_64-pc-windows-gnu"
