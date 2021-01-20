@@ -52,6 +52,10 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "provisioning/chocolatey/git.ps1", upload_path: "C:\\provisioning\\chocolatey\\git.ps1", privileged: true
 
   # ----------------------------------------------------------------------
+  # neovim
+  config.vm.provision "shell", path: "provisioning/chocolatey/neovim.ps1", upload_path: "C:\\provisioning\\chocolatey\\neovim.ps1", privileged: true
+
+  # ----------------------------------------------------------------------
   # Sysinternal tools
   config.vm.provision "shell", path: "provisioning/chocolatey/sysinternals.ps1", upload_path: "C:\\provisioning\\chocolatey\\sysinternals.ps1", privileged: true
 
