@@ -38,6 +38,7 @@ Vagrant.configure("2") do |config|
   ########################################################################
 
   config.vm.provision "file", source: "provisioning/common.ps1", destination: "C:\\provisioning\\common.ps1"
+  config.vm.provision "file", source: "provisioning/Microsoft.PowerShell_profile.ps1", destination: "C:\\Users\\IEUser\\Documents\\WindowsPowerShell\\Microsoft.PowerShell_profile.ps1"
 
   # ----------------------------------------------------------------------
   # OpenSSH
